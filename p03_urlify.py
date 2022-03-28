@@ -20,10 +20,8 @@ def urlify_algorithm(string: str, length: int) -> str:
             # Move characters
             char_list[new_index - 1] = char_list[i]
             new_index -= 1
-    # convert back to string
     return "".join(char_list[new_index:])
 
-    
 
 def test_urlify():
     assert urlify('wow hello there') == 'wow%20hello%20there'
