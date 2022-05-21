@@ -1,6 +1,6 @@
 def is_palindrome_permutation(str: str) -> str:
     stripped_str = str.replace(' ', '')
-    char_count = {i : stripped_str.count(i) for i in set(stripped_str)}
+    char_count = {i : stripped_str.count(i) for i in stripped_str}
 
     char_list = sorted(char_count.values())
 
